@@ -22,7 +22,7 @@ impl fmt::Display for Endpoint {
 }
 
 pub trait ResponseParser {
-    fn parse_data(&self) -> Vec<datarecord::DataRecord>;
+    fn parse_data(&self) -> Vec<datarecord::Record>;
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug)]

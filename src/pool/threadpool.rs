@@ -8,6 +8,7 @@ enum Message {
     Terminate,
 }
 
+#[warn(dead_code)]
 struct Worker {
     id: usize,
     thread: Option<thread::JoinHandle<()>>,
